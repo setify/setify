@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Open+Sans+Condensed:300,300italic,700);
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+/*
+// Block level inputs
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: @inputHeight; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  .box-sizing(border-box); // Makes inputs behave like true block-level elements
+}
+*/
+/*---------------------------------------------------
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Open Sans Condensed', sans-serif;
+  -------------------------------------------------*/body * {
+  font-family: 'Open Sans', sans-serif !important;
+}
+body h1,
+body h2,
+body h3 {
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  font-weight: bold !important;
+}
+#wpcontent,
+#wpfooter {
+  margin-left: 146px;
+  background: #F2F2F2;
+}
+/*---------------------------------------------------
+   Wrapper Style
+  -------------------------------------------------*/
+.wrap {
+  background: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px;
+  margin: 40px 20px;
+  padding: 20px;
+}
+#adminmenu a.menu-top,
+#adminmenu .wp-submenu-head {
+  font-size: 12px;
+  font-weight: normal;
+}
+#adminmenu a {
+  color: #555 !important;
+}
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+#adminmenu li.current a.menu-top,
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head {
+  color: #FFF !important;
+  font-weight: bold;
+}
+#storage_widget .bar {
+  background: #999;
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.6) 0 1px 3px;
+  -moz-box-shadow: inset rgba(0, 0, 0, 0.6) 0 1px 3px;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 1px 3px;
+  height: 9px;
+  -webkit-border-radius: 99px;
+  -moz-border-radius: 99px;
+  border-radius: 99px;
+}
+#storage_widget .bar .line {
+  background: #900;
+  height: 7px;
+  -webkit-border-radius: 99px;
+  -moz-border-radius: 99px;
+  border-radius: 99px;
+  -webkit-box-shadow: inset rgba(255, 255, 255, 0.4) 0 1px 0;
+  -moz-box-shadow: inset rgba(255, 255, 255, 0.4) 0 1px 0;
+  box-shadow: inset rgba(255, 255, 255, 0.4) 0 1px 0;
+}
+#storage_widget .bar .line.good {
+  background-color: #a9d72f;
+  background-image: -moz-linear-gradient(top, #b3e03a, #9ac81f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b3e03a), to(#9ac81f));
+  background-image: -webkit-linear-gradient(top, #b3e03a, #9ac81f);
+  background-image: -o-linear-gradient(top, #b3e03a, #9ac81f);
+  background-image: linear-gradient(to bottom, #b3e03a, #9ac81f);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb3e03a', endColorstr='#ff9ac81f', GradientType=0);
+  border: 1px solid #789c18;
+}
+#storage_widget .bar .line.warning {
+  background-color: #d7412f;
+  background-image: -moz-linear-gradient(top, #e04b3a, #c8311f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e04b3a), to(#c8311f));
+  background-image: -webkit-linear-gradient(top, #e04b3a, #c8311f);
+  background-image: -o-linear-gradient(top, #e04b3a, #c8311f);
+  background-image: linear-gradient(to bottom, #e04b3a, #c8311f);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe04b3a', endColorstr='#ffc8311f', GradientType=0);
+  border: 1px solid #9c2618;
+}
+.postbox h3 span {
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  font-weight: bold !important;
+  text-shadow: #ffffff 0 1px 0;
+}

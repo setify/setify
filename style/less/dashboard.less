@@ -1,0 +1,25 @@
+@storagelinecolorgood:      #9ac81f;
+@storagelinecolorwarning:   #c8311f;
+
+#storage_widget {
+    .bar {
+        background: #999;
+        .box-shadow(inset rgba(0,0,0,0.6) 0 1px 3px);
+        height: 9px;
+        .border-radius(99px);
+        .line {
+            background: #900;
+            height: 7px;
+            .border-radius(99px);
+            .box-shadow(inset rgba(255,255,255,0.4) 0 1px 0);
+        }
+        .line.good {
+            #gradient > .vertical (lighten(@storagelinecolorgood, 10%), @storagelinecolorgood);
+            border: 1px solid darken(@storagelinecolorgood, 10%);
+        }
+        .line.warning {
+            #gradient > .vertical (lighten(@storagelinecolorwarning, 10%), @storagelinecolorwarning);
+            border: 1px solid darken(@storagelinecolorwarning, 10%);
+        }
+    }
+}
